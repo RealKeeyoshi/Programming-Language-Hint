@@ -1,0 +1,43 @@
+Python 
+——— ALL LOWERCASE———
+
+pip install django          —— to install django to the project
+django-admin startproject [projectname] .         —— create package/ directory (app)
+django-admin startapp [appname] —— add app
+python3 manage.py runserver    —— run server
+Python3 manage.py runserver 0.0.0.0:5000. — to run in custom port [5000 - port number]
+
+
+{Project Setting Below Installed_App}
+
+EXTERNAL_APP = [
+‘accounts’,
+‘home’
+]
+
+INSTALLED_APPS += EXTERNAL_APPS
+
+————— (App name like home, accounts, products, etc)
+Also in django.filter is install 
+‘django_filters’
+
+python3 manage.py makemigrations — make model to db
+pythion3 manage.py migrate. ——to save to db
+
+python3 manage.py shell       ——to enter shell
+
+python3 manage.py createsuperuser   — to create first admin
+
+Pip install django.filter
+
+
+Pip install whitenoise == static 
+ 'whitenoise.middleware.WhiteNoiseMiddleware',  on setting.py middleware
+
+pip install psycopg2-binary  === to install postsql
+
+
+
+
+
+
