@@ -1,0 +1,57 @@
+------------------------- Install Node.js to run on Server ---------------------------
+(already install on laptop if not then install node from node.js)
+node js website link:  https://nodejs.org/en/download
+
+---------------- T0 Create Server at .js file ------------------- 
+const http = require('http');
+const fs = require('fs');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+const home = fs.readFileSync('./index.html')   
+const about = fs.readFileSync('./about.html')
+const contact = fs.readFileSync('./contact.html')
+const service = fs.readFileSync('./service.html')
+
+
+const server = http.createServer((req, res) => {
+    console.log(server.url);
+    url = req.url;
+
+    res.statusCode = 200;
+    res.setHeader('content-type','text/html');
+    if(url == '/'){
+        res.end(home); 
+    }
+    else if(url == '/about'){
+        res.end(about)
+    }
+    else if(url == '/contact'){
+        res.end(contact)
+    }
+    else if(url == '/service'){
+        res.end(service)
+    } 
+    else{
+        res.statusCode = 404;
+        res.end('<h1>404 not found</h1>')
+    }
+});
+
+server.listen(port, hostname, ()=>{
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+
+------- to install npm -------------
+(install automatically when installing node.js)
+
+--------- to create package.json ------------
+npm init -- terminal of the folder where you want to create the package
+
+-- then answer the question like name, version, description etc  --
+--- then install needed npm packages ---
+
+--- IF package delete accidently ---
+npm install --- on terminal can get all deleted package
+
