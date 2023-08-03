@@ -55,3 +55,8 @@ npm init -- terminal of the folder where you want to create the package eg: slug
 --- IF package delete accidently ---
 npm install --- on terminal can get all deleted package
 
+------ Install Nodemon so we wont need to restart server everytime -------
+npm install nodemon --global
+
+--after nodemon install successfully ---
+nodemon filename(eg; index.js or index.html or etc)
