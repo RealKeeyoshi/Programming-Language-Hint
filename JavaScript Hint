@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
     }
     else if(url == '/about'){
         res.end(about)
-    }
+    } 
     else if(url == '/contact'){
         res.end(contact)
     }
@@ -47,7 +47,7 @@ server.listen(port, hostname, ()=>{
 (install automatically when installing node.js)
 
 --------- to create package.json ------------
-npm init -- terminal of the folder where you want to create the package
+npm init -- terminal of the folder where you want to create the package eg: slugify
 
 -- then answer the question like name, version, description etc  --
 --- then install needed npm packages ---
