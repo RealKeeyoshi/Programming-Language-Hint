@@ -64,3 +64,11 @@ nodemon filename(eg; index.js or index.html or etc)
 
 --installing express----(make easier function etc)
 npm install express
+
+
+-----static files ----
+app.use('/static', express.static('static'))
+
+
+----install pug ---- (help to create templates)
+npm install pug
