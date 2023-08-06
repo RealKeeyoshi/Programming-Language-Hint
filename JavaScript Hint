@@ -60,3 +60,7 @@ npm install nodemon --global
 
 --after nodemon install successfully ---
 nodemon filename(eg; index.js or index.html or etc)
+
+
+--installing express----(make easier function etc)
+npm install express
