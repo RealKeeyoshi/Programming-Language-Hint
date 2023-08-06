@@ -66,9 +66,19 @@ nodemon filename(eg; index.js or index.html or etc)
 npm install express
 
 
------static files ----
+-----static files (add then make static folder) ----
 app.use('/static', express.static('static'))
 
-
 ----install pug ---- (help to create templates)
-npm install pug
+npm install pug 
+
+----to add pug  (add then make templates folder)----
+const path = require('path');
+
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'templates'))
+
+---- in html to conntect css below title ----
+ style
+        include ../static/style.css
+---
