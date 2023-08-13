@@ -1,0 +1,16 @@
+npx create-react-app appname
+npm i react-router-dom
+
+---- in app.js import -----
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+----in render ---
+  <BrowserRouter>
+  <Add Componet App Here To Show On All Page>
+        <Routes>
+          <Route path="/" element={<div>Home</div>} /></Routes>
+      </BrowserRouter>
+
+----- in Navbar----
+use Link instead of a 
+use to instead of href
