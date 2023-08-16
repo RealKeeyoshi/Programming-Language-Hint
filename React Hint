@@ -14,3 +14,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 ----- in Navbar----
 use Link instead of a 
 use to instead of href
+
+infinite scroll like yt ------------
+ npm install --save react-infinite-scroll-component
