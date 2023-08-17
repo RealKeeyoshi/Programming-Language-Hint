@@ -17,3 +17,8 @@ use to instead of href
 
 infinite scroll like yt ------------
  npm install --save react-infinite-scroll-component
+
+
+--- TOp React Loading Bar----
+npm install --save react-top-loading-bar
+
