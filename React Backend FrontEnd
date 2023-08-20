@@ -16,3 +16,6 @@ npm install jsonwebtoken
 --- in front end terminal --- 
 npm i react-router-dom concurrently
 --- which run multiple server (Backend and Front end)
+
+----- front end package.json on script add---
+"both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
