@@ -10,3 +10,9 @@ npm i mongoose
 npm install express-validator
 npm i bcryptjs
 npm install jsonwebtoken
+
+
+-----in React folder----
+--- in front end terminal --- 
+npm i react-router-dom concurrently
+--- which run multiple server (Backend and Front end)
