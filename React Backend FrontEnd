@@ -19,3 +19,7 @@ npm i react-router-dom concurrently
 
 ----- front end package.json on script add---
 "both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
+
+
+---- install cors in backend--
+npm install cors
