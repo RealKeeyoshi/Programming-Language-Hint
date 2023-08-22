@@ -10,7 +10,10 @@ npm i mongoose
 npm install express-validator
 npm i bcryptjs
 npm install jsonwebtoken
-
+npm install cors
+npm install dotenv --save
+npm i nodemailer
+npm install nodemon
 
 -----in React folder----
 --- in front end terminal --- 
@@ -19,7 +22,3 @@ npm i react-router-dom concurrently
 
 ----- front end package.json on script add---
 "both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
-
-
----- install cors in backend--
-npm install cors
